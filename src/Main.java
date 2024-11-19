@@ -10,7 +10,7 @@ public class Main {
             public static void main(String[] args) {
                 List<Flight> flights =FlightBuilder.createFlights();
 
-                System.out.println("Flight list after filtering by departure time:");
+                System.out.println("Flight list after filtering by departure time");
                 FlightFilter filterByDepartureTime = new FlightFilterByDepartureTime();
                 List<Flight> filteredByDepartureTime = filterByDepartureTime.filter(flights);
                 filteredByDepartureTime.forEach(flight -> System.out.println(flight.getSegments()));
